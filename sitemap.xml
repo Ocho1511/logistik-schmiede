@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://logistik-schmiede.de/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://logistik-schmiede.de/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://logistik-schmiede.de/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://logistik-schmiede.de/es/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://logistik-schmiede.de/it/"/>
+  </url>
+  <url>
+    <loc>https://logistik-schmiede.de/en/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://logistik-schmiede.de/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://logistik-schmiede.de/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://logistik-schmiede.de/es/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://logistik-schmiede.de/it/"/>
+  </url>
+  <url>
+    <loc>https://logistik-schmiede.de/es/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://logistik-schmiede.de/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://logistik-schmiede.de/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://logistik-schmiede.de/es/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://logistik-schmiede.de/it/"/>
+  </url>
+  <url>
+    <loc>https://logistik-schmiede.de/it/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://logistik-schmiede.de/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://logistik-schmiede.de/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://logistik-schmiede.de/es/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://logistik-schmiede.de/it/"/>
+  </url>
+</urlset>
