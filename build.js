@@ -230,7 +230,7 @@ function groups(t) {
 // Impressum (nur Deutsch), Texte von der alten Seite übernommen (Stand 2026-10).
 function imprint() {
   const sec = [
-    ['1. Haftung für Inhalte', 'Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.'],
+    ['1. Haftung für Inhalte', 'Als Diensteanbieter sind wir gemäß § 7 Abs. 1 DDG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 DDG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.'],
     ['2. Haftung für Links', 'Diese Website enthält Links zu externen Webseiten Dritter, auf deren Inhalte kein Einfluss genommen werden kann. Deshalb kann für diese fremden Inhalte auch keine Gewähr übernommen werden. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden derartige Links umgehend entfernt.'],
     ['3. Urheberrecht', 'Die durch die Diensteanbieter, deren Mitarbeiter und beauftragte Dritte erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der vorherigen schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden derartige Inhalte umgehend entfernt.'],
     ['4. Werbe-Kontaktaufnahme', 'Die Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich untersagt. Ausgenommen hiervon sind bestehende Geschäftsbeziehungen bzw. es liegt Ihnen eine entsprechende Einwilligung von uns vor. Die Anbieter und alle auf dieser Website genannten Dritten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen vor.']
@@ -249,7 +249,7 @@ function imprint() {
   <header class="site-header"><div class="wrap nav"><a class="brand" href="../"><span>LOGISTIK&nbsp;SCHMIEDE</span></a><a class="btn btn-small btn-ghost" href="../">← Zur Startseite</a></div></header>
   <main class="section"><div class="wrap prose">
     <h1>Impressum</h1>
-    <h2>Angaben gemäß § 5 TMG</h2>
+    <h2>Angaben gemäß § 5 DDG</h2>
     <p><b>Logistik-Schmiede.de</b><br>Thomas Knecht Consulting<br>Thomas Knecht, Dipl.-Betriebswirt (FH)<br>Scheidemannstr. 29<br>42781 Haan<br>Deutschland</p>
     <p>Telefon: <a href="tel:+491722644305">+49 172 26 44 305</a><br>E-Mail: <a href="mailto:info@logistik-4-0.de">info@logistik-4-0.de</a></p>
     <p>Umsatzsteuer-Identifikationsnummer: DE335261237</p>
@@ -491,11 +491,53 @@ for (const l of LANGS) {
 fs.mkdirSync(path.join(__dirname, 'impressum'), { recursive: true });
 fs.writeFileSync(path.join(__dirname, 'impressum', 'index.html'), imprint());
 console.log('wrote impressum/index.html');
+// Weiterleitungen alter Adressen (statisch, da GitHub Pages keine Server-Redirects kennt).
+const OLD = {
+  '': '#top', 'ueber-uns/': '#ueber-uns', 'consultant-services/': '#leistungen',
+  'consultant-services/erp-wms/': '#leistungen', 'consultant-services/logistics-4-0/': '#leistungen',
+  'consultant-services/customs-and-trade/': '#zoll', 'consultant-services/Cycle-Counts/': '#inventur',
+  'interim-management/': '#interim', 'interim-management/projectmanagement/': '#interim',
+  'request-quote/': '#kontakt', 'contact-us/': '#kontakt', 'legal-notice/': 'IMPRESSUM'
+};
+const OLDLANG = { 'de': '', 'en-us': 'en/', 'es-es': 'es/', 'it-it': 'it/' };
+function redirectPage(target) {
+  return `<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weiterleitung – Logistik Schmiede</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="${target}">
+<meta http-equiv="refresh" content="0; url=${target}">
+<script>location.replace(${JSON.stringify(target)}+location.hash)</script>
+</head><body><p><a href="${target}">${target}</a></p></body></html>
+`;
+}
+let nRedirects = 0;
+for (const [oldLang, newLang] of Object.entries(OLDLANG)) {
+  for (const [oldPath, anchor] of Object.entries(OLD)) {
+    // Startseiten der Sprachen (en-us/, es-es/, it-it/) leiten auf die neue Sprachseite
+    if (oldLang === 'de' && oldPath === '') continue;
+    const from = oldLang === 'de' ? oldPath : oldLang + '/' + oldPath;
+    const target = anchor === 'IMPRESSUM' ? SITE + '/impressum/' : SITE + '/' + newLang + anchor;
+    fs.mkdirSync(path.join(__dirname, from), { recursive: true });
+    fs.writeFileSync(path.join(__dirname, from, 'index.html'), redirectPage(target));
+    nRedirects++;
+  }
+}
+fs.writeFileSync(path.join(__dirname, '404.html'), `<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seite nicht gefunden – Logistik Schmiede</title><meta name="robots" content="noindex">
+<link rel="stylesheet" href="${SITE}/styles.css"></head>
+<body><main class="section"><div class="wrap prose"><h1>404</h1>
+<p>Diese Seite gibt es nicht (mehr). / This page does not exist.</p>
+<p><a class="btn" href="${SITE}/">Zur Startseite</a></p></div></main></body></html>
+`);
+console.log('wrote', nRedirects, 'redirects + 404.html');
 const today = new Date().toISOString().slice(0, 10);
 fs.writeFileSync(path.join(__dirname, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n` +
   LANGS.map(l => `  <url>\n    <loc>${url(l)}</loc>\n    <lastmod>${today}</lastmod>\n` + LANGS.map(x => `    <xhtml:link rel="alternate" hreflang="${x}" href="${url(x)}"/>`).join('\n') + `\n  </url>`).join('\n') + `\n</urlset>\n`);
 fs.writeFileSync(path.join(__dirname, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${SITE}/sitemap.xml\n`);
 console.log('wrote sitemap.xml, robots.txt');
+
 
 
 
