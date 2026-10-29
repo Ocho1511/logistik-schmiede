@@ -170,40 +170,40 @@ T.de.legalLink = 'Impressum'; T.en.legalLink = 'Legal notice'; T.es.legalLink = 
 // Platzhalter [HOSTING-ANBIETER] durch den tatsächlichen Anbieter ersetzen.
 const RESP = 'Thomas Knecht Consulting, Thomas Knecht, Scheidemannstr. 29, 42781 Haan';
 const P = {
-de: { nav: 'Datenschutz', title: 'Datenschutzerklärung – Logistik Schmiede', h1: 'Datenschutzerklärung', back: '← Zur Startseite', updated: 'Stand: Vorlage – vor Veröffentlichung prüfen',
+de: { nav: 'Datenschutz', title: 'Datenschutzerklärung – Logistik Schmiede', h1: 'Datenschutzerklärung', back: '← Zur Startseite', updated: 'Stand: Oktober 2026',
   sec: [
     ['1. Verantwortlicher', [`${RESP}, Deutschland. Telefon: +49 172 26 44 305, E-Mail: t.knecht@web.de.`]],
-    ['2. Hosting und Server-Logfiles', ['Diese Website wird bei [HOSTING-ANBIETER] gehostet. Beim Aufruf werden technisch notwendige Daten (IP-Adresse, Datum und Uhrzeit, aufgerufene Seite, Browsertyp) in Server-Logfiles verarbeitet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an Sicherheit und Betrieb der Website). Die Logfiles werden nach kurzer Zeit gelöscht.']],
+    ['2. Hosting und Server-Logfiles', ['Diese Website wird bei GitHub Pages (GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA) gehostet. Dabei kann eine Verarbeitung in den USA stattfinden; Informationen dazu finden Sie in der Datenschutzerklärung von GitHub (docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). Beim Aufruf werden technisch notwendige Daten (IP-Adresse, Datum und Uhrzeit, aufgerufene Seite, Browsertyp) in Server-Logfiles verarbeitet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an Sicherheit und Betrieb der Website). Die Logfiles werden nach kurzer Zeit gelöscht.']],
     ['3. Cookies, Tracking und Schriftarten', ['Wir setzen keine Cookies, keine Analyse- oder Tracking-Dienste und keine externen Schriftarten oder Skripte ein. Es werden ausschließlich Systemschriften verwendet.']],
     ['4. Kontaktaufnahme', ['Wenn Sie uns per E-Mail, Telefon oder über das Kontaktformular kontaktieren, verarbeiten wir Ihre Angaben (Name, E-Mail-Adresse, Nachricht) zur Bearbeitung Ihrer Anfrage. Das Formular öffnet Ihr Mailprogramm; die Nachricht wird erst durch Ihr Absenden per E-Mail an uns übertragen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b bzw. lit. f DSGVO sowie Ihre Einwilligung (lit. a). Wir speichern die Daten, solange es für die Bearbeitung erforderlich ist, und beachten gesetzliche Aufbewahrungsfristen.']],
     ['5. Externe Links', ['Diese Seite verlinkt auf externe Angebote (z. B. XING). Beim Anklicken gelten die Datenschutzbestimmungen des jeweiligen Anbieters.']],
     ['6. Ihre Rechte', ['Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch (Art. 15–21 DSGVO) sowie das Recht, eine erteilte Einwilligung jederzeit mit Wirkung für die Zukunft zu widerrufen. Wenden Sie sich dazu an die oben genannte Adresse.']],
     ['7. Beschwerderecht', ['Sie können sich bei einer Datenschutzaufsichtsbehörde beschweren, z. B. der Landesbeauftragten für Datenschutz und Informationsfreiheit Nordrhein-Westfalen, Düsseldorf.']]
   ] },
-en: { nav: 'Privacy', title: 'Privacy policy – Logistik Schmiede', h1: 'Privacy policy', back: '← Back to home', updated: 'Status: template – review before publishing',
+en: { nav: 'Privacy', title: 'Privacy policy – Logistik Schmiede', h1: 'Privacy policy', back: '← Back to home', updated: 'Last updated: October 2026',
   sec: [
     ['1. Controller', [`${RESP}, Germany. Phone: +49 172 26 44 305, email: t.knecht@web.de.`]],
-    ['2. Hosting and server log files', ['This website is hosted by [HOSTING PROVIDER]. When you visit it, technically necessary data (IP address, date and time, requested page, browser type) is processed in server log files. The legal basis is Art. 6(1)(f) GDPR (legitimate interest in the security and operation of the website). Log files are deleted after a short period.']],
+    ['2. Hosting and server log files', ['This website is hosted by GitHub Pages (GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA). Processing in the USA may occur; see the GitHub privacy statement (docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). When you visit it, technically necessary data (IP address, date and time, requested page, browser type) is processed in server log files. The legal basis is Art. 6(1)(f) GDPR (legitimate interest in the security and operation of the website). Log files are deleted after a short period.']],
     ['3. Cookies, tracking and fonts', ['We do not use cookies, analytics or tracking services, or external fonts or scripts. Only system fonts are used.']],
     ['4. Contact', ['If you contact us by email, phone or via the contact form, we process your details (name, email address, message) to handle your request. The form opens your email app; the message is only transmitted to us when you send the email. The legal basis is Art. 6(1)(b) or (f) GDPR and your consent (point (a)). We store the data as long as necessary to handle your request and observe statutory retention periods.']],
     ['5. External links', ['This site links to external services (e.g. XING). When you click them, the privacy policy of the respective provider applies.']],
     ['6. Your rights', ['You have the right of access, rectification, erasure, restriction of processing, data portability and objection (Art. 15–21 GDPR), and the right to withdraw consent at any time with effect for the future. Please contact us at the address above.']],
     ['7. Right to lodge a complaint', ['You may lodge a complaint with a data protection authority, e.g. the State Commissioner for Data Protection and Freedom of Information of North Rhine-Westphalia, Düsseldorf.']]
   ] },
-es: { nav: 'Privacidad', title: 'Política de privacidad – Logistik Schmiede', h1: 'Política de privacidad', back: '← Volver al inicio', updated: 'Estado: plantilla – revisar antes de publicar',
+es: { nav: 'Privacidad', title: 'Política de privacidad – Logistik Schmiede', h1: 'Política de privacidad', back: '← Volver al inicio', updated: 'Actualizado: octubre de 2026',
   sec: [
     ['1. Responsable', [`${RESP}, Alemania. Teléfono: +49 172 26 44 305, correo: t.knecht@web.de.`]],
-    ['2. Alojamiento y archivos de registro', ['Este sitio web está alojado en [PROVEEDOR DE HOSTING]. Al acceder se tratan datos técnicamente necesarios (dirección IP, fecha y hora, página solicitada, tipo de navegador) en archivos de registro del servidor. La base jurídica es el art. 6.1.f RGPD (interés legítimo en la seguridad y el funcionamiento del sitio). Los registros se eliminan tras un breve plazo.']],
+    ['2. Alojamiento y archivos de registro', ['Este sitio web está alojado en GitHub Pages (GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA). Puede producirse un tratamiento en EE. UU.; consulte la declaración de privacidad de GitHub (docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). Al acceder se tratan datos técnicamente necesarios (dirección IP, fecha y hora, página solicitada, tipo de navegador) en archivos de registro del servidor. La base jurídica es el art. 6.1.f RGPD (interés legítimo en la seguridad y el funcionamiento del sitio). Los registros se eliminan tras un breve plazo.']],
     ['3. Cookies, seguimiento y fuentes', ['No utilizamos cookies, servicios de análisis o seguimiento, ni fuentes o scripts externos. Solo se emplean fuentes del sistema.']],
     ['4. Contacto', ['Si nos contacta por correo, teléfono o mediante el formulario, tratamos sus datos (nombre, correo electrónico, mensaje) para atender su consulta. El formulario abre su programa de correo; el mensaje solo se transmite cuando usted lo envía. La base jurídica es el art. 6.1.b o f RGPD y su consentimiento (letra a). Conservamos los datos mientras sea necesario y respetamos los plazos legales de conservación.']],
     ['5. Enlaces externos', ['Este sitio enlaza a servicios externos (p. ej. XING). Al hacer clic se aplica la política de privacidad del proveedor correspondiente.']],
     ['6. Sus derechos', ['Tiene derecho de acceso, rectificación, supresión, limitación del tratamiento, portabilidad y oposición (arts. 15–21 RGPD), así como a retirar su consentimiento en cualquier momento con efectos futuros. Contacte con nosotros en la dirección indicada.']],
     ['7. Derecho a reclamar', ['Puede presentar una reclamación ante una autoridad de protección de datos, p. ej. la Comisionada Estatal de Protección de Datos y Libertad de Información de Renania del Norte-Westfalia, Düsseldorf.']]
   ] },
-it: { nav: 'Privacy', title: 'Informativa sulla privacy – Logistik Schmiede', h1: 'Informativa sulla privacy', back: '← Torna alla home', updated: 'Stato: modello – verificare prima della pubblicazione',
+it: { nav: 'Privacy', title: 'Informativa sulla privacy – Logistik Schmiede', h1: 'Informativa sulla privacy', back: '← Torna alla home', updated: 'Aggiornato: ottobre 2026',
   sec: [
     ['1. Titolare del trattamento', [`${RESP}, Germania. Telefono: +49 172 26 44 305, e-mail: t.knecht@web.de.`]],
-    ['2. Hosting e file di log', ['Questo sito è ospitato presso [FORNITORE DI HOSTING]. Alla visita vengono trattati dati tecnicamente necessari (indirizzo IP, data e ora, pagina richiesta, tipo di browser) nei file di log del server. La base giuridica è l’art. 6, par. 1, lett. f GDPR (legittimo interesse alla sicurezza e al funzionamento del sito). I log vengono cancellati dopo breve tempo.']],
+    ['2. Hosting e file di log', ['Questo sito è ospitato presso GitHub Pages (GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA). Può avvenire un trattamento negli USA; vedere l’informativa sulla privacy di GitHub (docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). Alla visita vengono trattati dati tecnicamente necessari (indirizzo IP, data e ora, pagina richiesta, tipo di browser) nei file di log del server. La base giuridica è l’art. 6, par. 1, lett. f GDPR (legittimo interesse alla sicurezza e al funzionamento del sito). I log vengono cancellati dopo breve tempo.']],
     ['3. Cookie, tracciamento e font', ['Non utilizziamo cookie, servizi di analisi o tracciamento né font o script esterni. Vengono usati solo i font di sistema.']],
     ['4. Contatto', ['Se ci contatta via e-mail, telefono o tramite il modulo, trattiamo i suoi dati (nome, e-mail, messaggio) per gestire la richiesta. Il modulo apre il suo programma di posta; il messaggio ci viene trasmesso solo quando lo invia. La base giuridica è l’art. 6, par. 1, lett. b o f GDPR e il suo consenso (lett. a). Conserviamo i dati per il tempo necessario e rispettiamo i termini di legge.']],
     ['5. Link esterni', ['Questo sito rimanda a servizi esterni (ad es. XING). Cliccando si applica l’informativa del rispettivo fornitore.']],
@@ -225,6 +225,42 @@ function groups(t) {
     map.get(m[1]).items.push({ sub: m[2] || '', place, type });
   });
   return [...map.values()].sort((a, b) => b.items.length - a.items.length);
+}
+
+// Impressum (nur Deutsch), Texte von der alten Seite übernommen (Stand 2026-10).
+function imprint() {
+  const sec = [
+    ['1. Haftung für Inhalte', 'Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.'],
+    ['2. Haftung für Links', 'Diese Website enthält Links zu externen Webseiten Dritter, auf deren Inhalte kein Einfluss genommen werden kann. Deshalb kann für diese fremden Inhalte auch keine Gewähr übernommen werden. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden derartige Links umgehend entfernt.'],
+    ['3. Urheberrecht', 'Die durch die Diensteanbieter, deren Mitarbeiter und beauftragte Dritte erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der vorherigen schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden derartige Inhalte umgehend entfernt.'],
+    ['4. Werbe-Kontaktaufnahme', 'Die Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich untersagt. Ausgenommen hiervon sind bestehende Geschäftsbeziehungen bzw. es liegt Ihnen eine entsprechende Einwilligung von uns vor. Die Anbieter und alle auf dieser Website genannten Dritten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen vor.']
+  ];
+  return `<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Impressum – Logistik Schmiede</title>
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="${SITE}/impressum/">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header"><div class="wrap nav"><a class="brand" href="../"><span>LOGISTIK&nbsp;SCHMIEDE</span></a><a class="btn btn-small btn-ghost" href="../">← Zur Startseite</a></div></header>
+  <main class="section"><div class="wrap prose">
+    <h1>Impressum</h1>
+    <h2>Angaben gemäß § 5 TMG</h2>
+    <p><b>Logistik-Schmiede.de</b><br>Thomas Knecht Consulting<br>Thomas Knecht, Dipl.-Betriebswirt (FH)<br>Scheidemannstr. 29<br>42781 Haan<br>Deutschland</p>
+    <p>Telefon: <a href="tel:+491722644305">+49 172 26 44 305</a><br>E-Mail: <a href="mailto:info@logistik-4-0.de">info@logistik-4-0.de</a></p>
+    <p>Umsatzsteuer-Identifikationsnummer: DE335261237</p>
+    <h2>Haftungsausschluss</h2>
+${sec.map(s => `    <h3>${esc(s[0])}</h3>\n    <p>${esc(s[1])}</p>`).join('\n')}
+  </div></main>
+  <footer class="site-footer"><div class="wrap foot"><span>© <span id="year"></span> Logistik-Schmiede.de · Thomas Knecht Consulting</span><span><a href="../privacy/">Datenschutz</a></span></div></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>
+`;
 }
 
 function privacy(l) {
@@ -432,7 +468,7 @@ ${g.items.map(p => `              <li><span>${p.sub ? `<b>${esc(p.sub)}</b> · `
   <footer class="site-footer">
     <div class="wrap foot">
       <span>© <span id="year"></span> Logistik-Schmiede.de · Thomas Knecht Consulting</span>
-      <span><a href="${SITE}${l === 'de' ? '/legal-notice/' : t.legalPath}">${esc(t.legalLink)}</a> · <a href="privacy/">${esc(P[l].nav)}</a></span>
+      <span><a href="${l === 'de' ? '' : '../'}impressum/" hreflang="de" lang="de">${esc(t.legalLink)}</a> · <a href="privacy/">${esc(P[l].nav)}</a></span>
     </div>
   </footer>
 
@@ -452,11 +488,17 @@ for (const l of LANGS) {
   fs.writeFileSync(path.join(__dirname, pOut), privacy(l));
   console.log('wrote', pOut);
 }
+fs.mkdirSync(path.join(__dirname, 'impressum'), { recursive: true });
+fs.writeFileSync(path.join(__dirname, 'impressum', 'index.html'), imprint());
+console.log('wrote impressum/index.html');
 const today = new Date().toISOString().slice(0, 10);
 fs.writeFileSync(path.join(__dirname, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n` +
   LANGS.map(l => `  <url>\n    <loc>${url(l)}</loc>\n    <lastmod>${today}</lastmod>\n` + LANGS.map(x => `    <xhtml:link rel="alternate" hreflang="${x}" href="${url(x)}"/>`).join('\n') + `\n  </url>`).join('\n') + `\n</urlset>\n`);
 fs.writeFileSync(path.join(__dirname, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${SITE}/sitemap.xml\n`);
 console.log('wrote sitemap.xml, robots.txt');
+
+
+
 
 
 
